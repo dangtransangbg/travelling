@@ -1,0 +1,55 @@
+server:
+  port: 8082
+#################################################################
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/travelling
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    show-sql: false
+    open-in-view: true
+
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views/
+#      suffix: .jsp
+#################################################################
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+#################################################################
+message:
+  default:
+    locale: vi
+#################################################################
+jwt:
+  issuer: issuer
+  subject: subject
+  audience: audience
+  audiences: audience
+  expiration: 1440
+  notBefore: 5.0
+  privateKey: private.pem
+  publicKey: public.pem
+#################################################################
+ckeditor :
+  storage :
+    image:
+      path: src/main/webapp/templates/userfiles/
+  access:
+    image:
+      url: http://localhost:8082
+#################################################################
+
+

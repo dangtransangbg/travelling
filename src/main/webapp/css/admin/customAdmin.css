@@ -1,0 +1,21 @@
+.form_config_test{
+    float: right;
+    border-color: #3598dc;
+    color: #3598dc;
+    background: 0 0;
+    border: 1px solid;
+    font-size: 13px;
+    /* border-radius: 47%; */
+    border-radius: 25px;
+    width: 105px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.sbold{
+    font-weight: 500!important;
+}
+.uppercase {
+    text-transform: uppercase!important;
+}
+
